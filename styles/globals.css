@@ -40,7 +40,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -62,12 +61,12 @@ a {
 
 input {
   background-color: #121212;
+  border-color: white;
   color: white;
   height: 2em;
-  border-radius: 5px;
 }
 
-input:disable {
+input:disabled {
   background-color: #222222;
   cursor: not-allowed;
 }
