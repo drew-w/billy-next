@@ -5,8 +5,11 @@ import { useState } from 'react'
 import { Input } from '@/components/Input'
 
 export default function Home () {
-  const [value, setValue] = useState<string>('hello')
-  const [valueTwo, setValueTwo] = useState<string>('goodbye')
+  const [value, setValue] = useState<string>('Name')
+  const [valueTwo, setValueTwo] = useState<string>('Commander')
+  const [valueThree, setValueThree] = useState<string>('Partner')
+  const [valueFour, setValueFour] = useState<string>('Companion')
+  
   const [loading, setLoading] = useState<boolean>(false)
 
   const delay = (ms: number) => new Promise(res => setTimeout(res, ms))
@@ -27,6 +30,10 @@ export default function Home () {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
+
+
+
+    <div className={styles.playerFormContainer}>
         <Input
           value={value}
           setValue={setValue}
@@ -39,6 +46,27 @@ export default function Home () {
           loading={loading}
           getData={getData}
         />
+        <Input
+          value={valueThree}
+          setValue={setValueThree}
+          loading={loading}
+          getData={getData}
+        />
+        <Input
+          value={valueFour}
+          setValue={setValueFour}
+          loading={loading}
+          getData={getData}
+        />
+</div>
+
+<div className={styles.playerCard}>
+  <div className={styles.playerCardValue}><button>-</button><p>Life Total:</p>40<p></p><button>+</button></div>
+  <div className={styles.playerCardValue}><button>-</button><p>Commander Tax:</p>0<p></p><button>+</button></div>
+  <div className={styles.playerCardValue}><button>-</button><p>Poison:</p>0<p></p><button>+</button></div>
+  <div className={styles.playerCardValue}><button>-</button><p>Storm Count:</p>0<p></p><button>+</button></div>
+  <div className={styles.playerCardValue}><button>-</button><p>Commander Damage:</p>0<p></p><button>+</button></div>
+</div>
       </main>
     </>
   )

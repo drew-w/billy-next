@@ -1,11 +1,11 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: #121212;
+  background-image: linear-gradient(to top right, rgba(109, 28, 120, 0.605), rgb(128, 0, 255));
   color: white;
 }
 
@@ -14,3 +14,35 @@
     padding: 1rem;
   }
 }
+
+.playerFormContainer {
+  background-color: rgb(48, 0, 92);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playerCard {
+  display: flex;
+  background-color: rgb(73, 29, 114);
+  border-radius: 7px;
+  height: auto;
+  min-height: 150px;
+  width: auto;
+  min-width: 250px;
+  max-width: 400px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 10px #3b005166;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerCardValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 9px;
+}
+
