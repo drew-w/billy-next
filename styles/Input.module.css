@@ -1,6 +1,9 @@
 .formContainer {
-    background-color: bisque;
+    background-color: rgb(105, 29, 147);
     display: flex;
     width: 100%;
     max-width: 400px;
+    
   }
+
+
